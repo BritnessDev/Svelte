@@ -15,15 +15,20 @@
   import { onMount } from "svelte";
   onMount(async () => {
     await import("@mux/mux-player");
-    const video = document.getElementById('video-id-54321');
+    const videoContext = document.querySelector("mux-video video");
+    videoContext.setAttribute("autoplay", "true");
+    videoContext.setAttribute("autoload", "true");
+    videoContext.setAttribute("playsinline", "true");
+    videoContext.play();
+    // const video = document.getElementById('video-id-54321');
     
-    video.play().then(function () {
-      // autoplay was successful!
-      console.log("111111111111111")
-    }).catch(function (error) {
-      // do something if you want to handle or track this error
-      console.log("22222222222222222222", error);
-    });
+    // video.play().then(function () {
+    //   // autoplay was successful!
+    //   console.log("111111111111111")
+    // }).catch(function (error) {
+    //   // do something if you want to handle or track this error
+    //   console.log("22222222222222222222", error);
+    // });
   });
 </script>
 
