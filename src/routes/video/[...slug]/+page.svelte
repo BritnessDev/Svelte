@@ -19,10 +19,10 @@
     videoContext.setAttribute("autoplay", "autoplay");
     videoContext.setAttribute("autoload", "true");
     videoContext.setAttribute("playsinline", "true");
-    videoContext.autoplay = "autoplay";
-    videoContext.autoload = true;
-    videoContext.playsinline = true;
-    videoContext.play();
+    // videoContext.autoplay = "autoplay";
+    // videoContext.autoload = true;
+    // videoContext.playsinline = true;
+    // videoContext.play();
     // const video = document.getElementById('video-id-54321');
     
     // video.play().then(function () {
