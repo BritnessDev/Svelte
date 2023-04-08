@@ -16,9 +16,12 @@
   onMount(async () => {
     await import("@mux/mux-player");
     const videoContext = document.querySelector("mux-video video");
-    videoContext.setAttribute("autoplay", "true");
+    videoContext.setAttribute("autoplay", "autoplay");
     videoContext.setAttribute("autoload", "true");
     videoContext.setAttribute("playsinline", "true");
+    videoContext.autoplay = "autoplay";
+    videoContext.autoload = true;
+    videoContext.playsinline = true;
     videoContext.play();
     // const video = document.getElementById('video-id-54321');
     
