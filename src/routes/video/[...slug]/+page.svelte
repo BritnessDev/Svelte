@@ -39,8 +39,8 @@
     metadata-viewer-user-id="user-id-sveltekit007"
     stream-type="on-demand"
     src="https://media-files.vidstack.io/hls/index.m3u8"
-    autoplay
-    autoload
+    autoplay={true}
+    autoload={true}
     playsinline={true}
   />
 </div>
